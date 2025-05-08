@@ -4,184 +4,547 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <title>KFC proect</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <title>Home Page</title>
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="container">
-                <a href="index.html">
-                    <img src="./4279.svg" alt=""
-                        style="width: 90px; height: 90px; position: relative; right: 200px; margin-left: 120px; top: 20px; ">
-                </a>
+    <nav id="navbar">
+        <div class="container">
+            <div id="logo-Zyber">
+                <a href="index.html"> <img src="./img/Logo_-_Light.webp" alt=""> </a>
+                <div class="container">
+                    <a type="button" class="search-btn" data-bs-toggle="modal" data-bs-target="#leftModal">
+                        <i class="bi bi-search fs-4"></i>
+                    </a>
 
-                <nav class="nav-buttons">
-                    <button class="red-btnn"><a href="menyu.html">MENYU</a></button>
-                    <button class="red-btn">RESTORANLAR</button>
-                    <button class="green-btn"><a href="halal.html">HALAL</a></button>
-                    <button class="red-btn">HOZIR BUYURTMA BERISH</button>
-                    <div class="icon-kfc">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <select name="" id="sele">
-                        <option value="">UZ</option>
-                        <option value="">ENG</option>
-                    </select>
-                </nav>
+                    <div class="modal left fade" id="leftModal" tabindex="-1" aria-labelledby="leftModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="leftModalLabel">Qidiruv</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control"
+                                            placeholder="Biz bog'lanish uchun raqamingizni qoldiring..."
+                                            aria-label="Qidiruv">
+                                        <button class="btn btn-primary" type="button">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
 
-
-
-
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./5412.jpg" class="d-block w-100" alt="..." style="border-radius: 30px;">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Yopish</button>
+                                    <button type="button" class="btn btn-primary">Qidirish</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./5396.jpg" class="d-block w-100" alt="...">
-                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    <div class="recommend">
-                        <button class="recomr">Tavsiya etiladi</button>
-                        <h1>Combo</h1>
-                    </div>
-
-                    <div class="ramka10">
-                        <img src="./medium_4476.jpg" alt="" style="margin-left: 40px;">
-                        <h5>CHIZBURGER DE LYUKS</h5>
-                        <p>Xantalli sous, ketchup, original panirovkada <br> tovuq go‘shti, piyoz, chedder pishlog‘i,
-                        </p>
-                        <button class="custom-button">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="Edit Icon">
-                        </button>
-                        <button class="recomers"><i class="fa-solid fa-bag-shopping"></i> 23 000 UZS </button>
-                    </div>
-
-                    <div class="ramka20">
-                        <img src="./medium_5349.jpg" alt="" style="margin-left: 40px;">
-                        <h5>TVISTER KEBAB ORIGINAL</h5>
-                        <p>Fri kartoshkasi, salatning qarsildoq barglari, <br> yangi tomatlar, tuzlangan bodiringlar,
-                            nozik</p>
-                        <button class="custom-button">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="Edit Icon">
-                            <button class="recomers"><i class="fa-solid fa-bag-shopping"></i> 28 000 UZS </button>
-                        </button>
-                    </div>
-                    <div class="ramka30">
-                        <img src="./medium_5124.jpg" alt="" style="margin-left: 40px;">
-                        <h5>BIG SANDERS BURGER ACHCHIQ</h5>
-                        <p>Original Big Sanders burger – nihoyatda katta va ishtahaochar! U ko‘p pishloq, barra</p>
-                        <button class="custom-button">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="Edit Icon">
-                            <button class="recomers"><i class="fa-solid fa-bag-shopping"></i> 37 000 UZS </button>
-                        </button>
-                    </div>
-                    <div class="ramka40">
-                        <img src="./medium_4476.jpg" alt="" style="margin-left: 40px;">
-                        <h5>SHEF TAUER ACHCHIQ</h5>
-                        <p>“Burger” sousi, Achchiq tolqinda sersuv file, xashbraun, pishloq bo‘lagi, aysberg salati va</p>
-                        <button class="custom-button">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="Edit Icon">
-                            <button class="recomers"><i class="fa-solid fa-bag-shopping"></i> 28 000 UZS </button>
-                        </button>
-                    </div>
-                    <button class="recomerss">BARCHA TAKLIFLARNI KO'RISH</button>
-                </div>
-                <div class="prices">
-                    <h3>Bizga o'zingizning fikringizni bildiring</h3>
-                    <p>Biz bilan tajribangizni baholang va bizga yaxshiroq bo'lishga yordam bering.</p>
-                    <button>
-                        AQSH NARXI
-                    </button>
-                </div>
-                <div class="prices1">
-                    <h3>11 tarkibiy mahsulotlar</h3>
-                    <p>Oziq-ovqatimizni o'zgacha qiladigan narsa.</p>
-                    <button>ULARNI KASHF ETING</button>
-                </div>
-
-                <!-- FOOTER QISM -->
-
-                <div class="helps">
-                    <img src="./4279.svg" alt="">
-                </div>
-                <div class="ishtimoiy">
-                    <h6><i class="fa-solid fa-phone"></i> +998 (78) 129 70 00 </h6>
-                </div>
-                <div class="i-ti">
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-                <div class="i-ti1">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="i-ti2">
-                    <i class="fa-brands fa-telegram"></i>
-                </div>
-
-                <div class="info">
-                    <h5>Ma'lumot</h5>
-                    <ul>
-                        <li><a href="#" class="infoo">Tarix</a></li>
-                        <li><a href="#" class="infoo">11 tarkibiy mahsulotlar!</a></li>
-                        <li><a href="#" class="infoo">Allergenlar & To'yimli</a></li>
-                        <li><a href="#" class="infoo">Do'konlar</a></li>
-                        <li><a href="#" class="infoo">HALAL</a></li>
-                    </ul>
-                </div>
-
-                <div class="info1">
-                    <h5>Yordam kerami?</h5>
-                    <ul>
-                        <li><a href="#" class="infoo">Biz bilan bog'lanish</a></li>
-                        <li><a href="#" class="infoo">KFC'ga ishga qabul qilish!</a></li>
-                        <li><a href="#" class="infoo">Shartlar va shartlar</a></li>
-                    </ul>
-                </div>
-
-                <div class="info2">
-                    <h5>Hisob</h5>
-                    <ul>
-                        <li><a href="#" class="infoo">Tizimga kirish</a></li>
-                        <li><a href="#" class="infoo">Ro'yhatdan o'tish</a></li>
-                        <li><a href="#" class="infoo">Parolimni unitdim</a></li>
-                    </ul>
-                </div>
-                <div class="info5">
-                    <h5>Maxfiylik siyosati</h5>
-                    <h3>© KFC UZ 2025</h3>
-                    <img src="./stripes.png" alt="">
                 </div>
             </div>
-        </nav>
-    </header>
-    <footer>
-        <div class="arganeztr">
-            <h4>Powered by</h4>
-            <h3>
-                Fimblle
-            </h3>
+
+            <div id="katalog">
+                <ul>
+                    <a href="./aksussarlar.html" class="list-item-group-zyber">
+                        <li>Aksessuarlar tovar</li>
+                    </a>
+                    <a href="" class="list-item-group-zyber">
+                        <li>Xizmatlar</li>
+                    </a>
+                    <a href="" class="list-item-group-zyber">
+                        <li>Felial</li>
+                    </a>
+                    <a href="" class="list-item-group-zyber">
+                        <li>Biz Haqimizada</li>
+                    </a>
+                    <a href="" class="list-item-group-zyber">
+                        <li>Maslahatlar</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="kichik-joylashuv">
+                <div class="contact-bar">
+                    <!-- Manzil ma'lumotlari -->
+
+                    <div class="contact-location">
+                        <div class="location-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="location-details">
+                            <p><strong>Sidva Osiyo kafe ro'parasi 37 do'kon</strong></p>
+                            <p><strong>Jizzax avtobuslar bekati A-24</strong></p>
+                            <p class="work-hours">Ish vaqti: har kuni | с 9:30 - 20:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Telefon raqamlari -->
+
+
+                    <div class="contact-phones">
+                        <div class="phone-icon">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="phone-numbers">
+                            <p class="phone">(99) 124-24-24</p>
+                            <p class="address">(Sidva 37)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <div class="position-relative">
+                    <input type="text" class="search-input" id="searchInput"
+                        placeholder="Qidirayotgan narsangizni shu yerdan toping! " autocomplete="off">
+                    <button class="search-button">Qidiring</button>
+
+                    <div class="search-results" id="searchResults">
+                        <a href="#">TACTICRIG FALCON ULTRA BLACK</a>
+                        <a href="#">TACTICRIG PANTHER PRO PLUS BLACK & PURPLE</a>
+                        <a href="#">TACTICRIG PANTHER PRO PLUS CHARCOAL & BLACK</a>
+                        <a href="#">TACTICRIG PANTHER PRO BLACK</a>
+                        <a href="#">TACTICRIG PANTHER PRO BLACK & GOLD</a>
+                        <a href="#">TACTICRIG PANTHER PRO BLACK & GREY</a>
+                        <a href="#">TACTICRIG FOX BLACK & GREY</a>
+                        <a href="#">AVerMedia Live Gamer Mini GC311</a>
+                        <a href="#">Thronmax Gaming Soundbar 60W THX-100</a>
+                        <a href="#">CHIEFTEC Polaris 3.0 (1250W) (PPS-1250FC-A3)</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <section id="carousel-gadjet1">
+        <div class="container">
+            <div class="keyboard">
+                <span class="key">A</span>
+                <span class="key">K</span>
+                <span class="key">S</span>
+                <span class="key">I</span>
+                <span class="key">Y</span>
+                <span class="key">A</span>
+            </div>
+            <!-- <div class="aksiya" style="position: relative; font-size: 40px; margin-top: -50px; top: -40px; text-align: center;">Aksiyadagi Tovarlar</div> -->
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./img/iXdCigGTau0Cgn8VDVPeEMGnBGkglllIZXtauzTA.jpg" alt=""
+                                    style="width: 500px; height: 400px;">
+                            </div>
+                            <figcaption>
+                                <h4>MB: Z790
+                                    CPU: Intel Core i7-13700F
+                                    Cooler: DeepCool LE720 Black
+                                    RAM: 2x16=32GB 5600MHz DDR5
+                                    SSD: NVMe 512GB
+                                    GPU: RTX 4070 Super 12GB
+                                    PSU: Chieftec Proton 750W
+                                    Case: UPGrade Phantom</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./img/kqzNGGnNmh6Pf3mglKvE4Ysf2yxRrS05ULLP4g4q.jpg" alt=""
+                                    style="width: 500px; height: 400px;">
+                            </div>
+                            <figcaption>
+                                <h4>MB: Z790
+                                    CPU: Intel Core i7-14700KF
+                                    Cooler: DeepCool LE720 Black
+                                    RAM: 2x16=32GB 5600MHz DDR5
+                                    SSD: NVMe 512GB
+                                    GPU: RTX 5070 12GB
+                                    PSU: Chieftec Proton 750W
+                                    Case: UPGrade Phantom</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./img/MF2oMwBDh1te5WaJFEzpRIxRBADw6hit52gcF2nl.jpg" alt=""
+                                    style="width: 500px; height: 400px;">
+                            </div>
+                            <figcaption>
+                                <h4>MB: B760M
+                                    CPU: Intel Core i5-14400F
+                                    Cooler: Alseye 120
+                                    RAM: 2x8=16GB 3600MHz RGB
+                                    SSD: NVMe 512GB
+                                    GPU: RTX 4060 Ti 8GB
+                                    PSU: 700W
+                                    Case: Hoftech Case RGB Black</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./img/./wus3ouqfDwgR5a8doYeklWiLdrKWGJBwN4hWX8QE.jpg" alt=""
+                                    style="width: 500px; height: 400px;">
+                            </div>
+                            <figcaption>
+                                <h4>MB: H610M-E
+                                    CPU: Intel Core i3 12100F
+                                    Cooler: Alseye 120
+                                    RAM: 2x8=16GB 3200MHz DDR4
+                                    SSD: 512GB M2 NVMe
+                                    GPU: GTX 1650 4GB
+                                    PSU: DeepCool 500W
+                                    Case: Hoftech Case RGB Black</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./img/SbYZj9AkA6DjzcFyc15DowXoCLbDKBtLwZuxsAQw.jpg" alt=""
+                                    style="width: 500px; height: 400px;">
+                            </div>
+                            <figcaption>
+                                <h4>MB: H610M-E
+                                    CPU: Intel Core i5-12400F
+                                    Cooler: Alseye 120
+                                    RAM: 2x8=16GB 3200MHz DDR4
+                                    SSD: 512GB M2 NVMe
+                                    GPU: RTX 3050 6GB
+                                    PSU: Zalman DecaMax 600W
+                                    Case: Hoftech Case RGB Black</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="./img/MF2oMwBDh1te5WaJFEzpRIxRBADw6hit52gcF2nl.jpg" alt=""
+                                    style="width: 500px; height: 400px;">
+                            </div>
+                            <figcaption>
+                                <h4>MB: Z890
+                                    CPU: Intel Ultra 9 285K
+                                    Cooler: DeepCool LD360 Black
+                                    RAM: 2x16=32GB 5600MHz DDR5
+                                    SSD: NVMe 512GB
+                                    GPU: RTX 5090 32GB
+                                    PSU: 1200W Gold
+                                    Case: UPGrade Phantom</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="./img/iXdCigGTau0Cgn8VDVPeEMGnBGkglllIZXtauzTA.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="./img/kqzNGGnNmh6Pf3mglKvE4Ysf2yxRrS05ULLP4g4q.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="./img/KZtifnHM61SReJBsGlEqTkyShrlbavzpFUyHi9Tl.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="./img/MF2oMwBDh1te5WaJFEzpRIxRBADw6hit52gcF2nl.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="./img/wus3ouqfDwgR5a8doYeklWiLdrKWGJBwN4hWX8QE.jpg"
+                                alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="./img/SbYZj9AkA6DjzcFyc15DowXoCLbDKBtLwZuxsAQw.jpg"
+                                alt=""></label>
+                    </li>
+                </ul>
+
+
+                <div class="wddwe">
+                    <div class="like-aird">
+                        <h1>Sizga qay biri yo</h1>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-card">
+
+                            <div class="tag">New</div>
+                            <h2 class="product-name">AirPods 4</h2>
+                            <img src="./img/Без названия.jpg" alt="AirPods 4" class="product-image">
+                            <p class="product-description">Narxi 6,590 so'm</p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="tag">New</div>
+                            <h2 class="product-name">AirPods 4</h2>
+                            <p class="product-subtitle">Active Noise Cancellation</p>
+                            <img src="./img/Без названия (1).jpg" alt="AirPods 4 with ANC" class="product-image">
+                            <p class="product-description">Narxi 6,780 so'm</p>
+                        </div>
+
+                        <div class="product-card">
+                            <h2 class="product-name">AirPods Pro 2</h2>
+                            <img src="./img/AirPods_Max_5-up_Hero_Screen__USEN.webp" alt="AirPods Pro 2"
+                                class="product-image">
+                            <p class="product-description">Narxi 7,990 so'm</p>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="tag">New colors</div>
+                            <h2 class="product-name">AirPods Max</h2>
+                            <img src="./img/Apple-AirPods-with-Wireless-Charging-Case_5200bdb7-0785-4b26-ba6b-52c0e1755c49.06c4cbca6a27f8d394ca1ec4c8fb92d6.webp"
+                                alt="AirPods Max" class="product-image">
+                            <p class="product-description">Narxi 1,457 so'm</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="container">
+                    <h1>HyperX Mikrofon Mahsulotlari</h1>
+
+                    <div class="products">
+                        <!-- HyperX SoloCast White -->
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="./img/VOIOVXMDSkWP4F2onSZYQPV2Vz0m1meXaOuNkdnA.jpg"
+                                    alt="HyperX SoloCast White" />
+                            </div>
+                            <div class="product-title">HyperX SoloCast White</div>
+                            <div class="stars">☆☆☆☆☆</div>
+                            <div class="product-price">871 000 so'm</div>
+                            <div class="buttons">
+                                <button class="button">SOTIB OLISH</button>
+                                <button class="button compare">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2">
+                                        </path>
+                                        <rect x="9" y="3" width="6" height="4" rx="2"></rect>
+                                        <line x1="9" y1="13" x2="15" y2="13"></line>
+                                        <line x1="9" y1="17" x2="15" y2="17"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- HyperX SoloCast Black -->
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="./img/rUvQqzQ3epn50Wz5pl4rjf6xpTwqkmmrljvMKMbi.jpg"
+                                    alt="HyperX SoloCast Black" />
+                            </div>
+                            <div class="product-title">HyperX SoloCast Black</div>
+                            <div class="stars">★★★★★</div>
+                            <div class="product-price">741 000 so'm</div>
+                            <div class="buttons">
+                                <button class="button">SOTIB OLISH</button>
+                                <button class="button compare">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2">
+                                        </path>
+                                        <rect x="9" y="3" width="6" height="4" rx="2"></rect>
+                                        <line x1="9" y1="13" x2="15" y2="13"></line>
+                                        <line x1="9" y1="17" x2="15" y2="17"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- HyperX QuadCast S White -->
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="./img/a7MwrzKmKeuetsCE21uHWX5sbnzAThlCwDcB68Ik.jpg"
+                                    alt="HyperX QuadCast S White" />
+                            </div>
+                            <div class="product-title">HyperX QuadCast S White</div>
+                            <div class="stars">☆☆☆☆☆</div>
+                            <div class="product-price">1 898 000 so'm</div>
+                            <div class="buttons">
+                                <button class="button">SOTIB OLISH</button>
+                                <button class="button compare">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2">
+                                        </path>
+                                        <rect x="9" y="3" width="6" height="4" rx="2"></rect>
+                                        <line x1="9" y1="13" x2="15" y2="13"></line>
+                                        <line x1="9" y1="17" x2="15" y2="17"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- HyperX QuadCast S Black -->
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="./img/vrV8EwMI9oppR58DAON0MpDcB9RKTH8HDEMJxeIW.jpg"
+                                    alt="HyperX QuadCast S Black" />
+                            </div>
+                            <div class="product-title">HyperX QuadCast S Black</div>
+                            <div class="stars">☆☆☆☆☆</div>
+                            <div class="product-price">1 847 000 so'm</div>
+                            <div class="buttons">
+                                <button class="button">SOTIB OLISH</button>
+                                <button class="button compare">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2">
+                                        </path>
+                                        <rect x="9" y="3" width="6" height="4" rx="2"></rect>
+                                        <line x1="9" y1="13" x2="15" y2="13"></line>
+                                        <line x1="9" y1="17" x2="15" y2="17"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- HyperX QuadCast Red -->
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="./img/0x4OR7goZ6yPgrozAvbQIFoKczsNHVAtG5bKGYYQ.jpg" alt="HyperX QuadCast" />
+                            </div>
+                            <div class="product-title">HyperX QuadCast</div>
+                            <div class="stars">☆☆☆☆☆</div>
+                            <div class="product-price">1 509 000 so'm</div>
+                            <div class="buttons">
+                                <button class="button">SOTIB OLISH</button>
+                                <button class="button compare">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2">
+                                        </path>
+                                        <rect x="9" y="3" width="6" height="4" rx="2"></rect>
+                                        <line x1="9" y1="13" x2="15" y2="13"></line>
+                                        <line x1="9" y1="17" x2="15" y2="17"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section brand">
+                <h2>Zyber</h2>
+                <p>Eng so‘nggi gadjetlar, aksessuarlar va texnologiyalar bizda!</p>
+            </div>
+
+            <div class="footer-section links">
+                <h4>Bo‘limlar</h4>
+                <ul>
+                    <li><a href="#">Biz Haqimizda</a></li>
+                    <li><a href="#">Felial</a></li>
+                    <li><a href="#">Aksessuarlar tovarlar</a></li>
+                    <li><a href="#">Maslahatlar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h4>Bog‘lanish</h4>
+                <p>Email: support@zyber.uz</p>
+                <p>Tel: +998 90 123 45 67</p>
+                <p>Manzil: Jizzax avtobuslar bekati A-24 </p>
+            </div>
+
+            <div class="footer-section social">
+                <h4>Ijtimoiy tarmoqlar</h4>
+                <a href="#">Instagram</a> |
+                <a href="#">Telegram</a> |
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Zyber. Barcha huquqlar himoyalangan.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Qidiruv maydoni fokusda bo'lganda natijalarni ko'rsatish
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        const searchButton = document.querySelector('.search-button');
+
+        searchInput.addEventListener('focus', function () {
+            searchResults.classList.add('show');
+        });
+
+        // Qidiruv tugmasini bosganda ham natijalarni ko'rsatish
+        searchButton.addEventListener('click', function () {
+            searchResults.classList.toggle('show');
+        });
+
+        // Qidiruv maydonidan tashqariga bosganda natijalarni yashirish
+        document.addEventListener('click', function (event) {
+            if (!searchInput.contains(event.target) && !searchResults.contains(event.target) && !searchButton.contains(event.target)) {
+                searchResults.classList.remove('show');
+            }
+        });
+
+        // Qidiruv natijalariga bosganda element tanlangan bo'lishi
+        const searchLinks = document.querySelectorAll('.search-results a');
+        searchLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                searchInput.value = this.textContent;
+                searchResults.classList.remove('show');
+            });
+        });
+    </script>
 </body>
 
 </html>

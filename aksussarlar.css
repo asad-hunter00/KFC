@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* NAVBAR START Zyber */
+
+#navbar {
+    background-color: #000000;
+    height: 80px;
+}
+
+#logo-Zyber {
+    position: relative;
+    padding-top: 20px;
+}
+
+/* UL LI ZYBER */
+
+.list-item-group-zyber a {
+    text-decoration: none;
+}
+
+.list-item-group-zyber li {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 45px;
+    text-decoration: underline;
+    color: white;
+    position: relative;
+    left: 750px;
+    top: -65px;
+
+}
+
+.list-item-group-zyber:hover li {
+    text-decoration: none;
+    /* Dastlab chiziqsiz */
+    transition: text-decoration 0.3s ease;
+    /* O‘tish animatsiyasi */
+    color: red;
+}
+
+
+
+/* Chap tomondan ochiladigan modal */
+
+
+.modal.left .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 0;
+}
+
+.modal.left .modal-body {
+    padding: 15px;
+}
+
+.modal.left.fade .modal-dialog {
+    left: -320px;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.show .modal-dialog {
+    left: 0;
+}
+
+.search-btn {
+    position: relative;
+    top: -35px;
+    left: 220px;
+}
+
+
+
+
+
+
+/* malumot joylashuv */
+
+
+
+.contact-bar {
+    max-width: 1175px;
+    margin: 0 auto;
+    margin-top: -50px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-location {
+    display: flex;
+    align-items: center;
+}
+
+.location-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff1493;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.location-icon i {
+    color: #ff1493;
+    font-size: 24px;
+}
+
+.location-details p {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.location-details strong {
+    display: block;
+    color: #333;
+}
+
+.location-details .work-hours {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.contact-phones {
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ff1493;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.phone-icon i {
+    color: white;
+    font-size: 22px;
+}
+
+.phone-numbers .phone {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.phone-numbers .address {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-location,
+    .contact-phones {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* SEARCH AKSISUAR KATALOG */
+
+.search-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.search-results {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 1000;
+    display: none;
+}
+
+.search-results.show {
+    display: block;
+}
+
+.search-results a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    text-decoration: underline;
+    border-bottom: 1px solid #eee;
+}
+
+.search-results a:hover {
+    text-decoration: none;
+    /* Dastlab chiziqsiz */
+    transition: text-decoration 0.3s ease;
+    /* O‘tish animatsiyasi */
+    color: red;
+}
+
+.search-results a:last-child {
+    border-bottom: none;
+}
+
+
+
+
